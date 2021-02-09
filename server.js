@@ -1,16 +1,16 @@
 const express = require('express');
-const cors = require('cors');
-const bodyParser = require('body-parser');
+const fetch = require('node-fetch');
 const path = require('path');
-const request = require('request');
 const app = express();
 
-request('https://pokeapi.co/api/v2/pokemon', (error, response, body) => {
-    console.error('error:', error);
-    console.log('statusCode:', response && response.statusCode);
-    console.log('body:', body);
-})
-
+fetch('https://pokeapi.co/api/v2/pokemon?limit=151.json').then(function (response) {
+    return response.json();
+}).then(function (obj) {
+    console.log(obj);
+}).catch(function (error) {
+    console.error("An error has occured.");
+    console.error(error);
+});
 
 app.use(express.static(path.join(__dirname, 'public',)));
 
