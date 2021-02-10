@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +41,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.pageHeader {
+  border: #61dafb;
+  border-style: dashed;
+  background-color: antiquewhite;
+}
+
+.inputField {
+  margin: 15px;
 }
