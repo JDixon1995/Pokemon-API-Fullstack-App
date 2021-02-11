@@ -4,7 +4,7 @@
   "description": "app w/ React and Express",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start-server": "node server.js",
     "server": "nodemon server.js"
   },
   "author": "John D.",
@@ -12,12 +12,14 @@
   "dependencies": {
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
+    "bootstrap": "^4.6.0",
     "concurrently": "^5.3.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "node-fetch": "^2.6.1",
     "nodemon": "^2.0.7",
     "pokedex-promise-v2": "^3.3.0",
+    "react-bootstrap": "^1.4.3",
     "request": "^2.88.2"
   }
 }

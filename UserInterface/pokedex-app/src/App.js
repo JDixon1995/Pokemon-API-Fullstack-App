@@ -1,14 +1,10 @@
 import './App.css';
-import Header from './Header.js'
-import Input from './Input.js'
-import Display from './Display.js'
+import HomePage from './home.jsx';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Input />
-      <Display />
+      <HomePage />
     </div>
   );
 }
